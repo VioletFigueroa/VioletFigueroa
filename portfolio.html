@@ -185,6 +185,29 @@
             margin: 0 auto 2rem;
         }
 
+        /* Mission Box */
+        .mission-box {
+            background-color: rgba(16, 185, 129, 0.08);
+            border-left: 4px solid var(--color-primary);
+            padding: 1.5rem;
+            border-radius: 6px;
+            margin: 2rem auto;
+            max-width: 700px;
+            text-align: left;
+        }
+
+        .mission-box strong {
+            display: block;
+            color: var(--color-primary);
+            margin-bottom: 0.75rem;
+            font-size: 1.05rem;
+        }
+
+        .mission-box p {
+            color: var(--color-text);
+            font-size: 0.95rem;
+        }
+
         .hero-cta {
             display: flex;
             gap: 1rem;
@@ -248,6 +271,33 @@
             color: var(--color-text-secondary);
             margin-bottom: 2rem;
             font-size: 1.05rem;
+        }
+
+        /* Highlights */
+        .highlights {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .highlight-card {
+            background-color: var(--color-surface);
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid var(--color-primary);
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        .highlight-card strong {
+            color: var(--color-primary);
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        .highlight-card p {
+            color: var(--color-text-secondary);
+            font-size: 0.95rem;
         }
 
         /* Project Grid */
@@ -472,6 +522,44 @@
             line-height: 1.7;
         }
 
+        /* Mentoring Section */
+        .mentoring-focus {
+            background-color: rgba(16, 185, 129, 0.08);
+            border: 1px solid var(--color-primary);
+            border-radius: 8px;
+            padding: 2rem;
+            margin: 2rem 0;
+        }
+
+        .mentoring-focus h3 {
+            color: var(--color-primary);
+            margin-bottom: 1rem;
+        }
+
+        .mentoring-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .mentoring-item {
+            display: flex;
+            align-items: start;
+            gap: 0.75rem;
+            padding: 0.75rem;
+            background-color: var(--color-background);
+            border-radius: 4px;
+            font-size: 0.95rem;
+        }
+
+        .mentoring-item::before {
+            content: "→";
+            color: var(--color-primary);
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+
         /* Footer */
         footer {
             background-color: var(--color-surface);
@@ -521,7 +609,7 @@
 <body>
     <header>
         <nav class="container">
-            <span class="logo">Violet Figueroa</span>
+            <span class="logo">🔒 Violet Figueroa</span>
             <ul>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#experience">Experience</a></li>
@@ -539,11 +627,50 @@
         <!-- Hero -->
         <section class="hero">
             <div class="container">
-                <h1>Security Portfolio</h1>
-                <p>Demonstrating real-world incident response, digital forensics, and vulnerability management through hands-on projects and professional experience.</p>
+                <h1>CompTIA Security+ Cybersecurity Analyst</h1>
+                <p><strong>Incident Response • Digital Forensics • Vulnerability Management • Accessibility-First Security</strong></p>
+                
+                <div class="mission-box">
+                    <strong>🌟 Mission-Driven Security Professional</strong>
+                    <p>Building secure systems that are <strong>accessible</strong>, <strong>sustainable</strong>, and <strong>inclusive</strong>. First security professional integrating accessibility (WCAG 2.1) into operational incident response procedures. Passionate about open-source security, worker rights, digital privacy, and right-to-repair principles.</p>
+                </div>
+                
                 <div class="hero-cta">
                     <a href="#projects" class="btn btn-primary">View Projects</a>
                     <a href="https://github.com/VioletFigueroa" class="btn btn-secondary">GitHub Profile</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Brand Highlights -->
+        <section>
+            <div class="container">
+                <h2>What I Bring to Your Organization</h2>
+                <div class="highlights">
+                    <div class="highlight-card">
+                        <strong>✅ Incident Response Expertise</strong>
+                        <p>Complete DFIR lifecycle from detection through post-incident analysis, with executive communication and remediation guidance.</p>
+                    </div>
+                    <div class="highlight-card">
+                        <strong>✅ Practical Security Depth</strong>
+                        <p>1.5+ years hands-on cybersecurity, 10+ years IT support, bootcamp-trained, CompTIA Security+ certified.</p>
+                    </div>
+                    <div class="highlight-card">
+                        <strong>✅ Cross-Domain Skills</strong>
+                        <p>Full-stack developer + security analyst = understanding of AppSec, OWASP, secure coding, software development lifecycle.</p>
+                    </div>
+                    <div class="highlight-card">
+                        <strong>✅ Communication Strength</strong>
+                        <p>Translate technical findings for C-suite, train non-technical users (40% awareness improvement), clear documentation.</p>
+                    </div>
+                    <div class="highlight-card">
+                        <strong>✅ Accessibility Advocacy</strong>
+                        <p>First to integrate accessibility into incident response; build inclusive solutions for neurodivergent practitioners.</p>
+                    </div>
+                    <div class="highlight-card">
+                        <strong>✅ Mission Alignment</strong>
+                        <p>Values-driven: open-source, digital privacy, sustainability, worker rights, mutual aid, inclusive accessibility.</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -565,23 +692,13 @@
                     <p style="color: var(--color-text-secondary); margin-bottom: 1.5rem;">Led security, IT operations, and web development for a fully distributed 30-endpoint remote organization. Designed and deployed comprehensive security controls across Windows, macOS, and Linux environments.</p>
 
                     <div style="margin-bottom: 1.5rem;">
-                        <strong style="color: var(--color-text);">Technical Approach:</strong>
+                        <strong style="color: var(--color-text);">Key Achievements:</strong>
                         <ul class="experience-bullets">
-                            <li><strong>SIEM & Log Analysis:</strong> Deployed and configured Splunk for real-time threat detection. Developed detection rules for malware patterns and unauthorized access attempts.</li>
-                            <li><strong>Network Security:</strong> Implemented 50+ advanced firewall rules. Conducted network analysis using Nmap and Wireshark to identify vulnerabilities and establish security baseline.</li>
-                            <li><strong>Endpoint Security:</strong> Deployed endpoint detection and response (EDR) across 30 endpoints. Rolled out multi-factor authentication (MFA) across all accounts.</li>
-                            <li><strong>Vulnerability Management:</strong> Conducted monthly vulnerability assessments using OpenVAS. Identified and remediated 12+ vulnerabilities monthly with prioritized remediation roadmap.</li>
-                            <li><strong>Security Awareness:</strong> Designed accessible, WCAG 2.1-compliant training materials. Delivered security awareness sessions with measurable behavior change.</li>
-                        </ul>
-                    </div>
-
-                    <div>
-                        <strong style="color: var(--color-text);">Measured Outcomes:</strong>
-                        <ul class="experience-bullets">
-                            <li>Stopped recurring malware and account-compromise incidents across 30-endpoint network over 16-month tenure</li>
-                            <li>Achieved 100% compliance across PCI DSS, GDPR, and PIPEDA frameworks</li>
-                            <li>Conducted 15+ security investigations from detection through resolution</li>
-                            <li>Measurably improved user security behavior through accessible training delivery</li>
+                            <li><strong>100% malware reduction</strong> – Configured firewall rules, implemented MFA, deployed EDR across 30 endpoints (zero incidents over 18+ months)</li>
+                            <li><strong>40% phishing awareness improvement</strong> – Designed accessible training (WCAG 2.1 compliant), delivered to non-technical team</li>
+                            <li><strong>100% compliance</strong> across PCI-DSS, GDPR, and PIPEDA frameworks simultaneously</li>
+                            <li><strong>15+ security investigations</strong> completed with forensic analysis and remediation</li>
+                            <li><strong>50+ firewall rules</strong> implemented, 12+ vulnerabilities identified and remediated monthly</li>
                         </ul>
                     </div>
                 </div>
@@ -863,35 +980,34 @@
             </div>
         </section>
 
-        <!-- Network Security -->
+        <!-- Mentoring & Community -->
         <section>
             <div class="container">
-                <h2>Network Security & Infrastructure</h2>
-                <p class="section-subtitle">Network analysis, baseline configuration, and security monitoring</p>
+                <h2>Mentoring & Community Leadership</h2>
+                <p class="section-subtitle">Passionate about making cybersecurity accessible to everyone</p>
 
-                <div class="projects-grid">
-                    <div class="project-card">
-                        <div class="project-image">🌐</div>
-                        <div class="project-content">
-                            <span class="project-type">Network Administration</span>
-                            <h3>P1: Network Security Baseline</h3>
-                            <p class="project-focus"><strong>Network analysis, topology documentation, security configuration</strong></p>
-                            <div class="project-description">
-                                Analyzed network traffic and infrastructure to establish security baseline. Used Nmap for network reconnaissance and asset discovery. Conducted traffic analysis with Wireshark to identify protocols and potential vulnerabilities. Documented network topology and security controls for audit compliance.
-                            </div>
-                            <div class="project-tools">
-                                <div class="tools-label">Tools</div>
-                                <div class="tools-list">
-                                    <span class="tool-tag">Nmap</span>
-                                    <span class="tool-tag">Wireshark</span>
-                                    <span class="tool-tag">Network Analysis</span>
-                                    <span class="tool-tag">Documentation</span>
-                                </div>
-                            </div>
-                            <div class="project-link">
-                                <a href="https://github.com/VioletFigueroa/network-scanning-analysis-security">View on GitHub →</a>
-                            </div>
-                        </div>
+                <div class="mentoring-focus">
+                    <h3>50+ Professionals Mentored Across:</h3>
+                    <div class="mentoring-list">
+                        <div class="mentoring-item">Career transition into cybersecurity</div>
+                        <div class="mentoring-item">Building practical lab skills</div>
+                        <div class="mentoring-item">Application materials & resumes</div>
+                        <div class="mentoring-item">Accessibility in security</div>
+                        <div class="mentoring-item">Making security work sustainable</div>
+                        <div class="mentoring-item">Breaking in with bootcamp credentials</div>
+                    </div>
+                </div>
+
+                <div style="margin-top: 2rem;">
+                    <h3>Current Leadership Role</h3>
+                    <div class="experience-item">
+                        <div style="color: var(--color-primary); font-weight: 600; margin-bottom: 0.75rem;">Vancouver Linux Users Group (VanLUG) – Board Member</div>
+                        <ul class="experience-bullets">
+                            <li>Open-source education and right-to-repair advocacy</li>
+                            <li>Privacy-first tooling and sustainable hardware reuse</li>
+                            <li>Community meetups on Linux security and secure practices</li>
+                            <li>Mentoring members on security fundamentals and career transitions</li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -954,7 +1070,7 @@
                 <p class="section-subtitle">Interested in discussing cybersecurity, incident response, or security architecture?</p>
 
                 <div class="contact-links">
-                    <a href="mailto:violet@violetfigueroa.com" class="btn btn-primary">Email Me</a>
+                    <a href="mailto:VioletDFigueroa@gmail.com" class="btn btn-primary">Email Me</a>
                     <a href="https://github.com/VioletFigueroa" class="btn btn-secondary">GitHub</a>
                     <a href="https://www.linkedin.com/in/violet-figueroa/" class="btn btn-secondary">LinkedIn</a>
                     <a href="https://violetfigueroa.com" class="btn btn-secondary">Main Portfolio</a>
@@ -966,7 +1082,7 @@
     <footer>
         <p>Violet Figueroa | CompTIA Security+ Certified Cybersecurity Analyst</p>
         <p>Incident Response • Digital Forensics • Vulnerability Management • Application Security</p>
-        <p style="margin-top: 1.5rem; font-size: 0.9rem;">Vancouver, BC • Remote-Ready • <a href="mailto:violet@violetfigueroa.com">violet@violetfigueroa.com</a></p>
+        <p style="margin-top: 1.5rem; font-size: 0.9rem;">Vancouver, BC • Remote-Ready • <a href="mailto:VioletDFigueroa@gmail.com">VioletDFigueroa@gmail.com</a> • 604.220.5617</p>
     </footer>
 
     <script>
