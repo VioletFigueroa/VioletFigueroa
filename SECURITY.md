@@ -2,16 +2,16 @@
 
 ## Disclaimer
 
-All projects in this portfolio are for **educational purposes only**. These repositories demonstrate my learning journey and practical application of cybersecurity concepts in controlled environments.
+These repositories are for educational and professional demonstration. Security assessments, forensic investigations, penetration testing, and vulnerability analyses were performed in controlled environments with explicit authorization.
 
 ### Lab Work Verification
 
-All security assessments, forensic investigations, penetration testing, and vulnerability analyses in this portfolio were performed:
-- ✅ In **controlled lab environments** (isolated from production systems)
-- ✅ With **explicit authorization** (educational coursework or personal lab)
-- ✅ Following **ethical guidelines** and security best practices
-- ✅ Using **responsible disclosure practices**
-- ✅ For **learning and skill development purposes**
+All security work was performed:
+- ✅ In controlled lab environments (isolated from production systems)
+- ✅ With explicit authorization (educational coursework or personal lab)
+- ✅ Following ethical guidelines and security best practices
+- ✅ Using responsible disclosure practices
+- ✅ For learning and skill development purposes
 
 ### Educational Context
 
@@ -30,41 +30,9 @@ None of these projects involved:
 
 ---
 
-## Responsible Disclosure Policy
-
-If you discover a security vulnerability in any of my projects:
-
-### Reporting Process
-
-1. **Do NOT** open a public GitHub issue (this would disclose the vulnerability)
-2. **Contact me directly** at: [violet@violetfigueroa.com](mailto:violet@violetfigueroa.com)
-3. **Include details:**
-   - Description of the vulnerability
-   - Steps to reproduce (if applicable)
-   - Potential impact
-   - Suggested remediation (if applicable)
-
-### What to Expect
-
-- **Acknowledgment** of your report within 48 hours
-- **Assessment** of the vulnerability within 1 week
-- **Remediation** timeline based on severity
-- **Credit** in the fix commit (with your permission)
-
-### Severity Classification
-
-| Severity | Response Time | Patch Time |
-|----------|---------------|-----------|
-| Critical | 24 hours | 7 days |
-| High | 48 hours | 14 days |
-| Medium | 1 week | 30 days |
-| Low | 2 weeks | 60 days |
-
----
-
 ## Security Best Practices Demonstrated
 
-Each project in this portfolio demonstrates specific security best practices:
+Each project demonstrates specific security best practices:
 
 ### Application Security
 - Input validation and sanitization
@@ -102,29 +70,47 @@ Each project in this portfolio demonstrates specific security best practices:
 
 ---
 
-## Training & Certifications
+## Responsible Disclosure Policy
 
-- **CompTIA Security+** - Validates foundational cybersecurity knowledge including ethics, incident response, and secure systems
-- **Lighthouse Labs Cybersecurity Bootcamp** - Intensive hands-on training in security domains
-- **Full-Stack Web Development** - Includes secure application development practices
+If you discover a security vulnerability in any of my repositories:
+
+### Reporting Process
+
+1. **Do NOT** open a public GitHub issue (this would disclose the vulnerability)
+2. **Contact me directly** at: [violet@violetfigueroa.com](mailto:violet@violetfigueroa.com)
+3. **Include details:**
+   - Description of the vulnerability
+   - Steps to reproduce (if applicable)
+   - Potential impact
+   - Suggested remediation (if applicable)
+
+### What to Expect
+
+- **Acknowledgment** of your report within 48 hours
+- **Assessment** of the vulnerability within 1 week
+- **Remediation** timeline based on severity
+- **Credit** in the fix commit (with your permission)
+
+### Severity Classification
+
+| Severity | Response Time | Patch Time |
+|----------|---------------|-----------|
+| Critical | 24 hours | 7 days |
+| High | 48 hours | 14 days |
+| Medium | 1 week | 30 days |
+| Low | 2 weeks | 60 days |
 
 ---
 
-## Continuous Learning
+## Project-Specific Security Policies
 
-I actively engage with:
-- OWASP Top 10 and security guidance
-- NIST Cybersecurity Framework
-- MITRE ATT&CK Framework
-- CIS Controls
-- Industry best practices and emerging threats
-- Security community discussions and resources
+Each project may include its own `SECURITY.md` file with project-specific security policies and procedures. For detailed security information about a specific project, refer to the `SECURITY.md` file in that project's repository.
 
 ---
 
 ## Questions?
 
-If you have questions about my security practices or portfolio projects, please reach out:
+If you have questions about my security practices or repository content, please reach out:
 
 - **Email:** [violet@violetfigueroa.com](mailto:violet@violetfigueroa.com)
 - **LinkedIn:** [linkedin.com/in/violet-figueroa](https://www.linkedin.com/in/violet-figueroa/)
@@ -132,4 +118,4 @@ If you have questions about my security practices or portfolio projects, please 
 
 ---
 
-**Last Updated:** January 28, 2026
+**Last Updated:** February 6, 2026
