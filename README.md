@@ -1,91 +1,241 @@
-# 👋 Hi, I'm Violet Figueroa
+# Violet Figueroa
 
-[![CompTIA Security+](https://img.shields.io/badge/CompTIA_Security%2B-Certified-FF0000?style=for-the-badge&logo=comptia&logoColor=white)](https://www.comptia.org/certifications/security)
-[![ISC2 CC](https://img.shields.io/badge/ISC2_CC-Certified-00A86B?style=for-the-badge&logo=isc2&logoColor=white)](https://www.isc2.org/certifications/cc)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/violetfigueroa)
-[![Portfolio](https://img.shields.io/badge/Portfolio-Visit-7c3aed?style=for-the-badge&logo=github&logoColor=white)](https://violetfigueroa.github.io)
-
-## 🛡️ Cybersecurity Analyst | Incident Response | Digital Forensics
-
-Entry-level cybersecurity professional passionate about protecting organizations from cyber threats through proactive security measures and thorough incident investigation.
+**Incident Response Analyst & Digital Forensics Specialist**  
+*Application Security | Secure Code Review | Compliance Frameworks*
 
 ---
 
-## 🌐 **Portfolio Website**
-
-### ✨ **[Visit My Portfolio →](https://violetfigueroa.github.io)**
-
-My interactive portfolio website showcases:
-
-- 📄 **Downloadable Resume** - Latest version updated January 2026
-- 📝 **Tailored Cover Letters** - Role-specific cover letters for Security Engineer, Threat Analyst, and general Cybersecurity positions
-- 🔧 **Technical Skills** - Comprehensive overview of security tools, platforms, and expertise
-- 📂 **Featured Projects** - Portfolio projects demonstrating incident response, digital forensics, and application security
-- 📫 **Contact Information** - Direct links to connect with me
-
-**Built with:** Custom HTML/CSS using my brand color palette for consistency across all web properties
+Cybersecurity professional with full-stack developer background specializing in breach investigation, forensic analysis, and application security. I combine deep technical expertise with strategic security thinking to solve complex cybersecurity challenges.
 
 ---
 
-## 🔧 Technical Skills
+## 🛡️ Security Expertise (Proven Through Projects)
 
-**Security & Forensics**
-![Incident Response](https://img.shields.io/badge/Incident_Response-Critical-dc2626?style=flat-square)
-![Digital Forensics](https://img.shields.io/badge/Digital_Forensics-Expert-7393e1?style=flat-square)
-![Threat Analysis](https://img.shields.io/badge/Threat_Analysis-Advanced-7c3aed?style=flat-square)
-![Malware Analysis](https://img.shields.io/badge/Malware_Analysis-Proficient-d97706?style=flat-square)
+### Incident Response & Digital Forensics
+**Projects demonstrating mastery:**
+- 🔍 **[Premium House Lights: DFIR Deep Dive](https://github.com/VioletFigueroa/Premium-House-Lights)** — Complete forensic investigation with evidence preservation and timeline analysis
+- 🔍 **[LifeLabs Data Breach Investigation](https://github.com/VioletFigueroa/data-breach-investigation-forensics)** — Breach timeline analysis, root cause determination, containment strategy
+- 🔍 **[The Case of Szechuan Sauce](https://github.com/VioletFigueroa/Digital-Forensics-Case-Study)** — Complex forensic analysis with evidence chain and incident reconstruction
 
-**Security Tools**
-![Splunk](https://img.shields.io/badge/Splunk-000000?style=flat-square&logo=splunk&logoColor=white)
-![Wireshark](https://img.shields.io/badge/Wireshark-1679A7?style=flat-square&logo=wireshark&logoColor=white)
-![Metasploit](https://img.shields.io/badge/Metasploit-2596CD?style=flat-square&logo=metasploit&logoColor=white)
-![Nmap](https://img.shields.io/badge/Nmap-4682B4?style=flat-square&logo=nmap&logoColor=white)
-![Burp Suite](https://img.shields.io/badge/Burp_Suite-FF6633?style=flat-square&logo=burp-suite&logoColor=white)
+**Core Skills:** `DigitalForensics` `IncidentResponse` `EvidencePreservation` `TimelineAnalysis` `NetworkForensics` `MemoryAnalysis` `ReportWriting`
 
-**Operating Systems**
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
-![Kali](https://img.shields.io/badge/Kali_Linux-557C94?style=flat-square&logo=kalilinux&logoColor=white)
-![Windows](https://img.shields.io/badge/Windows-0078D6?style=flat-square&logo=windows&logoColor=white)
-![macOS](https://img.shields.io/badge/macOS-000000?style=flat-square&logo=apple&logoColor=white)
+**Tools & Technologies:**
+- Forensic Imaging: FTK Imager, Autopsy
+- Network Analysis: Wireshark, tcpdump
+- Memory Forensics: Volatility, WinDbg
+- System Analysis: Sysinternals Suite, log analysis
+- Timeline: Timeline creation tools, log correlation
 
-**Programming**
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![Bash](https://img.shields.io/badge/Bash-4EAA25?style=flat-square&logo=gnubash&logoColor=white)
-![PowerShell](https://img.shields.io/badge/PowerShell-5391FE?style=flat-square&logo=powershell&logoColor=white)
-![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
+**Frameworks:** NIST IR Lifecycle | Evidence handling procedures | Chain of custody protocols | Incident response playbooks
 
 ---
 
-## 📂 Featured Repositories
+### Application Security & OWASP Top 10
+**Projects demonstrating mastery:**
+- 🔒 **[TinyApp: Secure Authentication](https://github.com/VioletFigueroa/tinyapp)** — Session management, password hashing (bcrypt), XSS prevention, CSRF protection
+- 🔒 **[Tweeter: XSS Prevention](https://github.com/VioletFigueroa/tweeter)** — Input sanitization, output encoding, security headers (CSP, X-Frame-Options), stored XSS mitigation
+- 🔒 **[LightBnB: SQL Injection Prevention](https://github.com/VioletFigueroa/lightbnb)** — Parameterized queries, input validation, secure database design, user data protection
 
-Explore my cybersecurity projects:
+**Core Skills:** `SecureAuthentication` `OWASP` `InputValidation` `OutputEncoding` `XSSPrevention` `SQLInjectionPrevention` `CSRF` `SecurityHeaders`
 
-- 🔍 **[VioletFigueroa.github.io](https://github.com/VioletFigueroa/VioletFigueroa.github.io)** - Interactive portfolio website with downloadable resume and cover letters
-- 🔒 **[my-portfolio-site](https://github.com/VioletFigueroa/my-portfolio-site)** - Hugo-based blog and portfolio showcasing detailed project work
-- 📊 **Application Security Testing** - OWASP Top 10 vulnerability assessments and remediation projects
-- 🌐 **Network Security Analysis** - Packet capture analysis and threat detection
-- 🤖 **Security Automation** - Python scripts for security operations
+**Tools & Technologies:**
+- Code Analysis: OWASP ZAP, npm security audit, Burp Suite
+- Security Libraries: Helmet.js, bcrypt, CORS, CSP
+- Testing: Jest (security tests), integration testing
+- Framework Tools: ESLint security plugins, npm audit
 
----
-
-## 📫 Contact Me
-
-- 📧 Email: [hello@violetfigueroa.com](mailto:hello@violetfigueroa.com)
-- 💼 LinkedIn: [linkedin.com/in/violetfigueroa](https://linkedin.com/in/violetfigueroa)
-- 🌐 Portfolio: [violetfigueroa.github.io](https://violetfigueroa.github.io)
-- 📂 All Projects: [View Repositories](https://github.com/VioletFigueroa?tab=repositories)
+**Standards:** OWASP Top 10 2021 | OWASP API Security | CWE/SANS Top 25 | Secure coding best practices
 
 ---
 
-**🎯 Status**: Interview Ready | **📍 Location**: Vancouver, BC, Canada | **✅ Available For**: Full-time Cybersecurity Roles
+### Compliance Frameworks & Risk Management
+**Projects demonstrating mastery:**
+- 📋 **[ISO 27001 Risk Management Framework](https://github.com/VioletFigueroa/iso27001-risk-management-framework)** — Control mapping, risk assessment methodology, compliance roadmap, strategic risk prioritization
+- 📋 **[Security Architecture Assessment](https://github.com/VioletFigueroa/security-architecture-assessment)** — Control gap analysis, threat modeling, defensive strategy, phased implementation planning
+- 📋 **[Vulnerability Assessment Framework](https://github.com/VioletFigueroa/vulnerability-assessment-framework)** — Risk prioritization methodology, remediation sequencing, CVSS scoring, vulnerability tracking
+
+**Core Skills:** `ComplianceFramework` `RiskManagement` `ControlMapping` `GapAnalysis` `ThreatModeling` `RiskPrioritization` `StrategicThinking`
+
+**Tools & Technologies:**
+- Frameworks: ISO 27001, NIST Cybersecurity Framework, CIS Controls
+- Analysis: Risk matrices, control matrices, gap analysis templates
+- Assessment: Risk scoring methodology, CVSS scoring, threat modeling
+- Documentation: Control registers, risk registers, compliance roadmaps
+
+**Deliverables:** Risk assessments | Control matrices | Gap analysis reports | Implementation roadmaps | Compliance documentation
 
 ---
 
-### 📥 Quick Links
+### Network Security & Threat Analysis
+**Projects demonstrating mastery:**
+- 🌐 **[Network Scanning & Analysis](https://github.com/VioletFigueroa/network-scanning-analysis)** — Comprehensive network inventory, vulnerability identification, threat modeling, asset discovery
+- 🌐 **[Security Architecture Assessment](https://github.com/VioletFigueroa/security-architecture-assessment)** — Network segmentation design, threat landscape analysis, defensive controls
 
-| Resource | Description |
-|----------|-------------|
-| [📄 Resume](https://violetfigueroa.github.io#downloads) | Download my latest resume (PDF) |
-| [📝 Cover Letters](https://violetfigueroa.github.io#downloads) | Role-specific cover letters |
-| [🛡️ Portfolio](https://violetfigueroa.github.io) | Interactive portfolio website |
-| [📚 Blog](https://violetfigueroa.github.io/my-portfolio-site) | Hugo blog with detailed projects |
+**Core Skills:** `NetworkSecurity` `VulnerabilityIdentification` `ThreatAnalysis` `NetworkDiscovery` `AssetInventory` `ThreatModeling`
+
+**Tools & Technologies:**
+- Network Scanning: Nmap, Zenmap, Shodan
+- Traffic Analysis: Wireshark, tcpdump, network analyzers
+- Vulnerability Detection: Nessus, OpenVAS
+- Network Tools: netstat, ifconfig, traceroute
+
+**Methodologies:** Network discovery and enumeration | Service identification | Vulnerability assessment | Threat landscape analysis
+
+---
+
+### Development & Secure Coding
+**Projects demonstrating mastery:**
+- 💻 **[TinyApp](https://github.com/VioletFigueroa/tinyapp)** — RESTful API design, secure authentication, data validation, error handling
+- 💻 **[Interview Scheduler](https://github.com/VioletFigueroa/interview-scheduler)** — React patterns, state management, secure data handling, component architecture
+- 💻 **[LightBnB](https://github.com/VioletFigueroa/lightbnb)** — Full-stack security, PostgreSQL database design, secure querying, user data protection
+
+**Core Skills:** `SecureAPIDesign` `Authentication` `DataValidation` `ErrorHandling` `SecureDefaults` `PrincipleOfLeastPrivilege`
+
+**Tech Stack:** Node.js | Express.js | React | PostgreSQL | MongoDB | JavaScript/ES6+
+
+**Practices:** Secure coding principles | Input validation | Error handling | Data protection | API security design
+
+---
+
+## 🔧 Additional Technical Expertise
+
+### Security Frameworks & Standards
+- ✅ **ISO 27001** — Information security management framework
+- ✅ **NIST Cybersecurity Framework** — Risk-based security approach
+- ✅ **OWASP Top 10** — Web application security vulnerabilities
+- ✅ **MITRE ATT&CK** — Adversary tactics and techniques framework
+- ✅ **CIS Controls** — Critical security controls
+- ✅ **TLP (Traffic Light Protocol)** — Threat information classification
+
+### Security Tools & Platforms
+**Forensics & Incident Response:** Wireshark | Volatility | FTK Imager | Autopsy | Sysinternals Suite | Splunk | Timeline tools
+
+**Network & Vulnerability:** Nmap | Nessus | OpenVAS | Zenmap | Shodan | netstat | Traceroute | tcpdump
+
+**Application Security:** OWASP ZAP | Burp Suite | npm security audit | ESLint plugins | Helmet.js | CORS
+
+**Development:** Node.js | Express.js | React | PostgreSQL | MongoDB | Git | GitHub | Docker basics
+
+### Certifications & Credentials
+- **CompTIA Security+** (2024) — Validated foundational cybersecurity knowledge
+- **Lighthouse Labs Cybersecurity Bootcamp** — Professional security training and hands-on labs
+- **Full-Stack Web Development** — Bootcamp training (React, Node.js, PostgreSQL, MongoDB)
+
+---
+
+## 🎯 What I Bring to Your Organization
+
+**Problem-Solving Excellence**
+- Methodical approach to complex security challenges
+- Evidence-based decision making
+- Strategic thinking combined with technical execution
+
+**Technical Depth**
+- Hands-on expertise in multiple security domains
+- Understanding of both offensive and defensive security
+- Developer background enables secure architecture design
+
+**Communication Skills**
+- Clear documentation of findings and recommendations
+- Ability to communicate complex concepts to stakeholders
+- Professional incident response reporting
+
+**Security Mindset**
+- Proactive threat identification
+- Risk-based prioritization
+- Continuous learning and adaptation
+- Ethical responsibility in security practice
+
+**Full-Stack Perspective**
+- Developer background + security expertise
+- Understanding of secure coding principles
+- Business context awareness
+- Technical and strategic bridge-building
+
+---
+
+## 🛡️ Security & Responsible Disclosure
+
+**Disclaimer:** All projects in this portfolio are for **educational purposes**. All security assessments, forensic investigations, penetration testing, and vulnerability analyses were performed in **controlled lab environments** with **explicit authorization**, following **ethical guidelines** and **responsible disclosure practices**.
+
+See [SECURITY.md](./SECURITY.md) for detailed information on responsible disclosure and lab work verification.
+
+---
+
+## 📚 Continuing Education & Learning Resources
+
+**Currently Studying:**
+- Advanced digital forensics methodologies
+- Threat modeling and adversary tactics
+- Cloud security architecture
+
+**Recommended Resources I Follow:**
+- [NIST Cybersecurity Framework](https://www.nist.gov/cyberframework/) — Risk-based cybersecurity guidance
+- [OWASP Top 10 2021](https://owasp.org/Top10/) — Web application security risks
+- [MITRE ATT&CK Framework](https://attack.mitre.org/) — Adversary tactics and techniques
+- [Digital Forensics Research Workshop](https://www.dfrws.org/) — Latest forensics research and methodologies
+- [Security Awareness & Training](https://shehackspurple.ca/) — Industry insights and career guidance
+
+**Communities & Networks:**
+- Active participant in cybersecurity communities and knowledge-sharing initiatives
+- Continuous learner and contributor to security discussions
+- Engaged with industry standards and best practices
+
+---
+
+## 📊 Notable Projects (18 Total)
+
+### Security Investigations & Forensics
+- Premium House Lights: DFIR Investigation
+- LifeLabs Data Breach Investigation
+- Szechuan Sauce Digital Forensics Case Study
+- Network Scanning & Analysis Assessment
+- Security Architecture Assessment
+- Log Analysis & Automation Framework
+
+### Application Security & OWASP
+- TinyApp: Secure Authentication & XSS Prevention
+- Tweeter: XSS Prevention & Security Headers
+- LightBnB: SQL Injection Prevention & Database Security
+
+### Compliance & Risk Management
+- ISO 27001 Risk Management Framework
+- Risk & Vulnerability Assessment Framework
+- Vulnerability Assessment & Remediation Framework
+- Best Practices Security Guide
+- TLP Artifacts & Classification Guide
+- IR Playbooks & Response Procedures
+
+### Development & Technical Projects
+- Interview Scheduler (React/Node.js)
+- Scheduler API (Express/PostgreSQL)
+- Lotide (TDD JavaScript)
+
+---
+
+## 📫 Let's Connect
+
+I'm actively pursuing opportunities in incident response, digital forensics, and application security.
+
+- **Email:** [violet@violetfigueroa.com](mailto:violet@violetfigueroa.com)
+- **LinkedIn:** [linkedin.com/in/violet-figueroa](https://www.linkedin.com/in/violet-figueroa/)
+- **GitHub:** [github.com/VioletFigueroa](https://github.com/VioletFigueroa)
+
+---
+
+## 📈 Portfolio Statistics
+
+- **18 Projects** demonstrating security expertise and technical depth
+- **3 Focus Areas:** Incident Response/Forensics, Application Security, Compliance/Risk Management
+- **Full-Stack Background** combining development and security perspectives
+- **Industry Standards** mastery: ISO 27001, NIST, OWASP, MITRE ATT&CK
+- **Hands-On Experience** with professional-grade security tools and frameworks
+
+---
+
+**Last Updated:** January 28, 2026  
+**Portfolio Status:** Actively maintained and updated as new projects are completed
+
+---
+
+*This portfolio demonstrates my commitment to cybersecurity excellence, continuous learning, and ethical security practice. I combine technical depth with strategic thinking to deliver real security value.*
