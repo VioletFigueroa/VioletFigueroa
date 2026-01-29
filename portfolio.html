@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Violet Figueroa | Security Portfolio</title>
+    <style>
+        :root {
+            --color-primary: #1a7875;
+            --color-primary-light: #2ba199;
+            --color-secondary: #1f4a47;
+            --color-accent: #ff6b6b;
+            --color-warning: #ffa500;
+            --color-success: #51cf66;
+            --color-bg: #0f1419;
+            --color-surface: #1a1f26;
+            --color-surface-light: #262d36;
+            --color-text: #e8eaed;
+            --color-text-secondary: #b0b4ba;
+            --color-border: #3a4249;
+            --color-focus-ring: rgba(26, 120, 117, 0.3);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background-color: var(--color-bg);
+            color: var(--color-text);
+            line-height: 1.6;
+        }
+
+        a {
+            color: var(--color-primary);
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        a:hover {
+            color: var(--color-primary-light);
+            text-decoration: underline;
+        }
+
+        a:focus-visible {
+            outline: 2px solid var(--color-primary);
+            outline-offset: 2px;
+        }
+
+        header {
+            background-color: var(--color-surface);
+            border-bottom: 1px solid var(--color-border);
+            padding: 1.5rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--color-primary);
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: var(--color-text-secondary);
+            font-size: 0.9rem;
+            transition: color 0.2s ease;
+        }
+
+        nav a:hover {
+            color: var(--color-primary);
+            text-decoration: none;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 4rem 2rem;
+            text-align: center;
+            border-bottom: 1px solid var(--color-border);
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--color-text);
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            color: var(--color-text-secondary);
+            max-width: 700px;
+            margin: 0 auto 2rem;
+        }
+
+        .hero-cta {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 0.75rem 1.5rem;
+            border-radius: 6px;
+            border: none;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn-primary {
+            background-color: var(--color-primary);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background-color: var(--color-primary-light);
+            text-decoration: none;
+        }
+
+        .btn-secondary {
+            background-color: var(--color-surface-light);
+            color: var(--color-text);
+            border: 1px solid var(--color-border);
+        }
+
+        .btn-secondary:hover {
+            background-color: var(--color-border);
+            text-decoration: none;
+        }
+
+        /* Section Styles */
+        section {
+            padding: 4rem 2rem;
+            border-bottom: 1px solid var(--color-border);
+        }
+
+        section h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: var(--color-text);
+        }
+
+        .section-subtitle {
+            color: var(--color-text-secondary);
+            margin-bottom: 2rem;
+            font-size: 1.05rem;
+        }
+
+        /* Project Grid */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .project-card {
+            background-color: var(--color-surface);
+            border: 1px solid var(--color-border);
+            border-radius: 8px;
+            padding: 2rem;
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .project-card:hover {
+            border-color: var(--color-primary);
+            background-color: var(--color-surface-light);
+            transform: translateY(-4px);
+        }
+
+        .project-card h3 {
+            color: var(--color-primary);
+            margin-bottom: 0.5rem;
+            font-size: 1.2rem;
+        }
+
+        .project-type {
+            display: inline-block;
+            background-color: rgba(26, 120, 117, 0.15);
+            color: var(--color-primary);
+            padding: 0.25rem 0.75rem;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            margin-bottom: 1rem;
+            width: fit-content;
+        }
+
+        .project-description {
+            color: var(--color-text-secondary);
+            margin-bottom: 1rem;
+            flex-grow: 1;
+        }
+
+        .project-focus {
+            color: var(--color-text);
+            margin-bottom: 1rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid var(--color-border);
+        }
+
+        .project-tools {
+            margin-bottom: 1rem;
+        }
+
+        .tools-label {
+            font-size: 0.85rem;
+            color: var(--color-text-secondary);
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .tools-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .tool-tag {
+            background-color: rgba(26, 120, 117, 0.1);
+            color: var(--color-primary);
+            padding: 0.3rem 0.6rem;
+            border-radius: 3px;
+            font-size: 0.8rem;
+        }
+
+        .project-link {
+            margin-top: auto;
+        }
+
+        .project-link a {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem 1rem;
+            background-color: rgba(26, 120, 117, 0.1);
+            border-radius: 4px;
+            transition: all 0.2s ease;
+        }
+
+        .project-link a:hover {
+            background-color: rgba(26, 120, 117, 0.2);
+            text-decoration: none;
+        }
+
+        /* Experience Section */
+        .experience-item {
+            background-color: var(--color-surface);
+            border-left: 4px solid var(--color-primary);
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 4px;
+        }
+
+        .experience-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+            margin-bottom: 1rem;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .experience-header h3 {
+            color: var(--color-text);
+            font-size: 1.2rem;
+        }
+
+        .experience-date {
+            color: var(--color-text-secondary);
+            font-size: 0.95rem;
+        }
+
+        .experience-role {
+            color: var(--color-primary);
+            font-size: 0.95rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .experience-bullets {
+            list-style: none;
+            margin-top: 1rem;
+        }
+
+        .experience-bullets li {
+            margin-bottom: 0.75rem;
+            padding-left: 1.5rem;
+            position: relative;
+            color: var(--color-text-secondary);
+        }
+
+        .experience-bullets li:before {
+            content: "▸";
+            position: absolute;
+            left: 0;
+            color: var(--color-primary);
+        }
+
+        /* Technical Skills (from projects) */
+        .skills-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .skill-category {
+            background-color: var(--color-surface);
+            padding: 1.5rem;
+            border-radius: 8px;
+            border: 1px solid var(--color-border);
+        }
+
+        .skill-category h3 {
+            color: var(--color-primary);
+            margin-bottom: 1rem;
+            font-size: 1.05rem;
+        }
+
+        .skill-category p {
+            color: var(--color-text-secondary);
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--color-surface);
+            border-top: 1px solid var(--color-border);
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+
+        footer p {
+            color: var(--color-text-secondary);
+            margin-bottom: 1rem;
+        }
+
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+            margin-bottom: 2rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+
+            nav ul {
+                gap: 1rem;
+                font-size: 0.85rem;
+            }
+
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .experience-header {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <span class="logo">Violet Figueroa</span>
+            <ul>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Technical Depth</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero -->
+        <section class="hero">
+            <div class="container">
+                <h1>Security Portfolio</h1>
+                <p>Demonstrating real-world incident response, digital forensics, and vulnerability management through hands-on projects and professional experience.</p>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="https://github.com/VioletFigueroa" class="btn btn-secondary">GitHub Profile</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Real-World Experience -->
+        <section id="experience">
+            <div class="container">
+                <h2>Real-World Experience</h2>
+                <p class="section-subtitle">Implementing security at scale: 30-endpoint remote organization with proven impact</p>
+
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <div>
+                            <h3>Cybersecurity Analyst, Web Developer & IT Support</h3>
+                            <span class="experience-role">Accessible Places</span>
+                        </div>
+                        <span class="experience-date">Sept 2022 – Jan 2024</span>
+                    </div>
+                    <p style="color: var(--color-text-secondary); margin-bottom: 1.5rem;">Led security, IT operations, and web development for a fully distributed 30-endpoint remote organization. Designed and deployed comprehensive security controls across Windows, macOS, and Linux environments.</p>
+
+                    <div style="margin-bottom: 1.5rem;">
+                        <strong style="color: var(--color-text);">Technical Approach:</strong>
+                        <ul class="experience-bullets">
+                            <li><strong>SIEM & Log Analysis:</strong> Deployed and configured Splunk for real-time threat detection. Developed detection rules for malware patterns and unauthorized access attempts.</li>
+                            <li><strong>Network Security:</strong> Implemented 50+ advanced firewall rules. Conducted network analysis using Nmap and Wireshark to identify vulnerabilities and establish security baseline.</li>
+                            <li><strong>Endpoint Security:</strong> Deployed endpoint detection and response (EDR) across 30 endpoints. Rolled out multi-factor authentication (MFA) across all accounts.</li>
+                            <li><strong>Vulnerability Management:</strong> Conducted monthly vulnerability assessments using OpenVAS. Identified and remediated 12+ vulnerabilities monthly with prioritized remediation roadmap.</li>
+                            <li><strong>Security Awareness:</strong> Designed accessible, WCAG 2.1-compliant training materials. Delivered security awareness sessions with measurable behavior change.</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <strong style="color: var(--color-text);">Measured Outcomes:</strong>
+                        <ul class="experience-bullets">
+                            <li>Stopped recurring malware and account-compromise incidents across 30-endpoint network over 16-month tenure</li>
+                            <li>Achieved 100% compliance across PCI DSS, GDPR, and PIPEDA frameworks</li>
+                            <li>Conducted 15+ security investigations from detection through resolution</li>
+                            <li>Measurably improved user security behavior through accessible training delivery</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Projects -->
+        <section id="projects">
+            <div class="container">
+                <h2>Featured Cybersecurity Projects</h2>
+                <p class="section-subtitle">Incident response, digital forensics, and threat analysis</p>
+
+                <div class="projects-grid">
+                    <!-- Premium House Lights -->
+                    <div class="project-card">
+                        <span class="project-type">Incident Response & DFIR</span>
+                        <h3>Premium House Lights: The Heist</h3>
+                        <p class="project-focus"><strong>Full-scope incident response and digital forensics investigation</strong></p>
+                        <div class="project-description">
+                            Led end-to-end DFIR investigation of a simulated ransomware/extortion attack. Analyzed system logs, memory dumps, and network traffic to reconstruct complete attack timeline. Identified 8-12 distinct attack paths and root causes. Delivered executive briefing with actionable security recommendations.
+                        </div>
+                        <div class="project-tools">
+                            <div class="tools-label">Tools & Methodologies</div>
+                            <div class="tools-list">
+                                <span class="tool-tag">Volatility</span>
+                                <span class="tool-tag">Autopsy</span>
+                                <span class="tool-tag">Wireshark</span>
+                                <span class="tool-tag">Splunk</span>
+                                <span class="tool-tag">MITRE ATT&CK</span>
+                                <span class="tool-tag">NIST Framework</span>
+                            </div>
+                        </div>
+                        <div class="project-link">
+                            <a href="https://github.com/VioletFigueroa/Premium-House-Lights">View on GitHub →</a>
+                        </div>
+                    </div>
+
+                    <!-- Intellectual Property Investigation -->
+                    <div class="project-card">
+                        <span class="project-type">Digital Forensics</span>
+                        <h3>Intellectual Property Theft Investigation</h3>
+                        <p class="project-focus"><strong>Complete forensic investigation of data exfiltration</strong></p>
+                        <div class="project-description">
+                            Conducted comprehensive digital forensics investigation of IP theft. Used memory analysis to identify running malware and processes. Examined file system artifacts and event logs to establish timeline. Analyzed network traffic to track data exfiltration paths. Delivered forensic report with remediation guidance.
+                        </div>
+                        <div class="project-tools">
+                            <div class="tools-label">Tools & Methodologies</div>
+                            <div class="tools-list">
+                                <span class="tool-tag">Memory Forensics</span>
+                                <span class="tool-tag">Disk Forensics</span>
+                                <span class="tool-tag">Network Analysis</span>
+                                <span class="tool-tag">Timeline Analysis</span>
+                            </div>
+                        </div>
+                        <div class="project-link">
+                            <a href="https://github.com/VioletFigueroa/Digital-Forensics-Case-Study">View on GitHub →</a>
+                        </div>
+                    </div>
+
+                    <!-- LogHawk Tool -->
+                    <div class="project-card">
+                        <span class="project-type">Security Automation</span>
+                        <h3>LogHawk – Security Log Monitoring Tool</h3>
+                        <p class="project-focus"><strong>Custom Python/Bash automation for threat detection</strong></p>
+                        <div class="project-description">
+                            Developed custom log monitoring tool for automated anomaly detection in enterprise environments. Built log parsing engine with regex pattern matching for threat identification. Implemented alert generation and report formatting. Published as open-source tool demonstrating secure coding practices.
+                        </div>
+                        <div class="project-tools">
+                            <div class="tools-label">Tools & Methodologies</div>
+                            <div class="tools-list">
+                                <span class="tool-tag">Python</span>
+                                <span class="tool-tag">Bash</span>
+                                <span class="tool-tag">Log Parsing</span>
+                                <span class="tool-tag">Regex</span>
+                                <span class="tool-tag">Open Source</span>
+                            </div>
+                        </div>
+                        <div class="project-link">
+                            <a href="https://github.com/VioletFigueroa/log-analysis-monitoring-automation">View on GitHub →</a>
+                        </div>
+                    </div>
+
+                    <!-- IR Plan/Playbook -->
+                    <div class="project-card">
+                        <span class="project-type">Security Framework</span>
+                        <h3>Incident Response Plan, Playbooks & Policy</h3>
+                        <p class="project-focus"><strong>Complete incident response framework</strong></p>
+                        <div class="project-description">
+                            Developed comprehensive incident response framework following NIST guidelines. Created complete IR plan with roles, responsibilities, and escalation paths. Built detailed playbooks for phishing and ransomware incidents. Documented TLP classification and external reporting procedures.
+                        </div>
+                        <div class="project-tools">
+                            <div class="tools-label">Frameworks & Standards</div>
+                            <div class="tools-list">
+                                <span class="tool-tag">NIST 800-61</span>
+                                <span class="tool-tag">CISA Guidelines</span>
+                                <span class="tool-tag">TLP</span>
+                                <span class="tool-tag">Playbook Design</span>
+                            </div>
+                        </div>
+                        <div class="project-link">
+                            <a href="https://github.com/VioletFigueroa/security-policies-procedures-tlp">View on GitHub →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Vulnerability & Risk Management -->
+        <section>
+            <div class="container">
+                <h2>Vulnerability & Risk Management</h2>
+                <p class="section-subtitle">Risk assessment, remediation planning, and compliance frameworks</p>
+
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <span class="project-type">Architecture & Design</span>
+                        <h3>P11: Secure Architecture Report</h3>
+                        <p class="project-focus"><strong>Defense-in-depth network architecture design</strong></p>
+                        <div class="project-description">
+                            Designed enterprise network architecture aligned with NIST 800-53 and defense-in-depth principles. Documented security controls, network segmentation strategy, and attack surface mitigation. Provided recommendations for access controls, monitoring, and incident response capabilities.
+                        </div>
+                        <div class="project-tools">
+                            <div class="tools-label">Frameworks</div>
+                            <div class="tools-list">
+                                <span class="tool-tag">NIST 800-53</span>
+                                <span class="tool-tag">CIS Controls</span>
+                                <span class="tool-tag">Defense-in-Depth</span>
+                            </div>
+                        </div>
+                        <div class="project-link">
+                            <a href="https://github.com/VioletFigueroa/Security-Architecture-Assessment">View on GitHub →</a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <span class="project-type">Vulnerability Assessment</span>
+                        <h3>P6: Vulnerability Assessment & Prioritization</h3>
+                        <p class="project-focus"><strong>CVE identification, CVSS scoring, remediation roadmap</strong></p>
+                        <div class="project-description">
+                            Conducted vulnerability assessment across infrastructure. Identified CVEs and assigned CVSS scores based on business impact. Created prioritized remediation roadmap considering risk, exploitability, and implementation complexity. Recommended specific controls and configurations.
+                        </div>
+                        <div class="project-tools">
+                            <div class="tools-label">Tools & Methodologies</div>
+                            <div class="tools-list">
+                                <span class="tool-tag">OpenVAS</span>
+                                <span class="tool-tag">CVSS Scoring</span>
+                                <span class="tool-tag">CVE Research</span>
+                                <span class="tool-tag">Risk Prioritization</span>
+                            </div>
+                        </div>
+                        <div class="project-link">
+                            <a href="https://github.com/VioletFigueroa/vulnerability-assessment-framework">View on GitHub →</a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <span class="project-type">Risk & Compliance</span>
+                        <h3>P5: ISO 27001 Risk Management</h3>
+                        <p class="project-focus"><strong>Risk assessment and control mapping</strong></p>
+                        <div class="project-description">
+                            Performed comprehensive risk management analysis aligned with ISO 27001. Developed risk matrix assessing likelihood and impact. Mapped organizational controls to ISO 27001 requirements. Identified compliance gaps and created remediation strategy.
+                        </div>
+                        <div class="project-tools">
+                            <div class="tools-label">Standards</div>
+                            <div class="tools-list">
+                                <span class="tool-tag">ISO 27001</span>
+                                <span class="tool-tag">Risk Analysis</span>
+                                <span class="tool-tag">Controls Mapping</span>
+                            </div>
+                        </div>
+                        <div class="project-link">
+                            <a href="https://github.com/VioletFigueroa/iso27001-risk-management-framework">View on GitHub →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Application Security -->
+        <section>
+            <div class="container">
+                <h2>Application Security & OWASP</h2>
+                <p class="section-subtitle">Secure code review, OWASP Top 10 mitigation, full-stack security</p>
+
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <span class="project-type">Authentication & Authorization</span>
+                        <h3>TinyApp – Secure URL Shortener</h3>
+                        <p class="project-focus"><strong>OWASP A07: Identification & Authentication Failures mitigation</strong></p>
+                        <div class="project-description">
+                            Built full-stack URL shortener with robust authentication and authorization controls. Implemented bcrypt password hashing and secure session management. Enforced principle of least privilege for resource access. Demonstrates secure user management and data protection.
+                        </div>
+                        <div class="project-tools">
+                            <div class="tools-label">Technologies</div>
+                            <div class="tools-list">
+                                <span class="tool-tag">Node.js</span>
+                                <span class="tool-tag">Express</span>
+                                <span class="tool-tag">bcrypt</span>
+                                <span class="tool-tag">Session Management</span>
+                            </div>
+                        </div>
+                        <div class="project-link">
+                            <a href="https://github.com/VioletFigueroa/tinyapp">View on GitHub →</a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <span class="project-type">Input Validation & XSS Prevention</span>
+                        <h3>Tweeter – Social Media Platform</h3>
+                        <p class="project-focus"><strong>OWASP A03: Injection & XSS Prevention</strong></p>
+                        <div class="project-description">
+                            Developed single-page social media application with rigorous input validation and output encoding. Implemented DOM sanitization to prevent XSS attacks. Enforced strict input validation on all user-controllable data. Protects against client-side attacks and session hijacking.
+                        </div>
+                        <div class="project-tools">
+                            <div class="tools-label">Technologies</div>
+                            <div class="tools-list">
+                                <span class="tool-tag">React</span>
+                                <span class="tool-tag">Input Validation</span>
+                                <span class="tool-tag">Output Encoding</span>
+                                <span class="tool-tag">DOM Sanitization</span>
+                            </div>
+                        </div>
+                        <div class="project-link">
+                            <a href="https://github.com/VioletFigueroa/tweeter">View on GitHub →</a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <span class="project-type">Database Security</span>
+                        <h3>LightBnB – Property Rental Platform</h3>
+                        <p class="project-focus"><strong>OWASP A03: SQL Injection Prevention</strong></p>
+                        <div class="project-description">
+                            Designed property rental platform with database security as core principle. Implemented parameterized queries and prepared statements to prevent SQL injection. All database interactions use safe patterns. Prevents unauthorized data access and manipulation.
+                        </div>
+                        <div class="project-tools">
+                            <div class="tools-label">Technologies</div>
+                            <div class="tools-list">
+                                <span class="tool-tag">Node.js</span>
+                                <span class="tool-tag">PostgreSQL</span>
+                                <span class="tool-tag">Parameterized Queries</span>
+                                <span class="tool-tag">Database Security</span>
+                            </div>
+                        </div>
+                        <div class="project-link">
+                            <a href="https://github.com/VioletFigueroa/lightBnB">View on GitHub →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Network Security -->
+        <section>
+            <div class="container">
+                <h2>Network Security & Infrastructure</h2>
+                <p class="section-subtitle">Network analysis, baseline configuration, and security monitoring</p>
+
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <span class="project-type">Network Administration</span>
+                        <h3>P1: Network Security Baseline</h3>
+                        <p class="project-focus"><strong>Network analysis, topology documentation, security configuration</strong></p>
+                        <div class="project-description">
+                            Analyzed network traffic and infrastructure to establish security baseline. Used Nmap for network reconnaissance and asset discovery. Conducted traffic analysis with Wireshark to identify protocols and potential vulnerabilities. Documented network topology and security controls for audit compliance.
+                        </div>
+                        <div class="project-tools">
+                            <div class="tools-label">Tools</div>
+                            <div class="tools-list">
+                                <span class="tool-tag">Nmap</span>
+                                <span class="tool-tag">Wireshark</span>
+                                <span class="tool-tag">Network Analysis</span>
+                                <span class="tool-tag">Documentation</span>
+                            </div>
+                        </div>
+                        <div class="project-link">
+                            <a href="https://github.com/VioletFigueroa/network-scanning-analysis-security">View on GitHub →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Capabilities -->
+        <section id="skills">
+            <div class="container">
+                <h2>Technical Capabilities Demonstrated</h2>
+                <p class="section-subtitle">Skills developed through real-world projects and professional experience</p>
+
+                <div class="skills-section">
+                    <div class="skill-category">
+                        <h3>Incident Response & Forensics</h3>
+                        <p>Complete DFIR lifecycle execution: preparation, detection, analysis, containment, eradication, recovery. Memory analysis (Volatility), disk forensics (Autopsy), network analysis (Wireshark). Chain-of-custody procedures. NIST 800-61 framework implementation.</p>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3>SIEM & Log Analysis</h3>
+                        <p>Splunk platform deployment and configuration. Detection rule development. Alert tuning and false-positive reduction. Log correlation and threat identification. Splunk dashboard development for incident response team visibility.</p>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3>Vulnerability Management</h3>
+                        <p>OpenVAS vulnerability scanning and CVE identification. CVSS scoring and risk prioritization. Remediation planning and implementation. Vulnerability tracking and verification. Risk communication to executive leadership.</p>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3>Network Security</h3>
+                        <p>Firewall rule implementation and management. Network segmentation and access control. Nmap for network reconnaissance. Wireshark for traffic analysis. Monitoring and threat detection. TCP/IP, VPN, IDS/IPS configuration.</p>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3>Application Security</h3>
+                        <p>OWASP Top 10 vulnerability identification and mitigation. Secure code review practices. Authentication and authorization implementation. Input validation and output encoding. SQL injection prevention. XSS attack mitigation.</p>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3>Security Frameworks & Compliance</h3>
+                        <p>NIST 800-53 control mapping and implementation. ISO 27001 risk management and compliance. PCI DSS, GDPR, PIPEDA framework alignment. Security policy development. Audit and assessment methodology.</p>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3>Programming & Automation</h3>
+                        <p>Python and Bash scripting for security automation. Node.js and Express backend development. React frontend security. PostgreSQL database security and query design. Git version control. CI/CD integration.</p>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3>Systems & Infrastructure</h3>
+                        <p>Linux (Debian/Kali) system administration. Windows Server and macOS management. Active Directory and Azure AD. Endpoint security and EDR deployment. Docker containerization. Multi-platform endpoint security.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact">
+            <div class="container" style="text-align: center;">
+                <h2>Let's Connect</h2>
+                <p class="section-subtitle">Interested in discussing cybersecurity, incident response, or security architecture?</p>
+
+                <div class="contact-links">
+                    <a href="mailto:violet@violetfigueroa.com" class="btn btn-primary">Email Me</a>
+                    <a href="https://github.com/VioletFigueroa" class="btn btn-secondary">GitHub</a>
+                    <a href="https://www.linkedin.com/in/violet-figueroa/" class="btn btn-secondary">LinkedIn</a>
+                    <a href="https://violetfigueroa.com" class="btn btn-secondary">Main Portfolio</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Violet Figueroa | CompTIA Security+ Certified Cybersecurity Analyst</p>
+        <p>Incident Response • Digital Forensics • Vulnerability Management • Application Security</p>
+        <p style="margin-top: 1.5rem; font-size: 0.9rem;">Vancouver, BC • Remote-Ready • <a href="mailto:violet@violetfigueroa.com">violet@violetfigueroa.com</a></p>
+    </footer>
+</body>
+</html>
