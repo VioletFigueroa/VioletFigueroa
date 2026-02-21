@@ -1,6 +1,6 @@
 # Hi there 👋 I'm Violet Figueroa
 
-**CompTIA Security+ | Cybersecurity Analyst | Incident Response & Digital Forensics**
+**CompTIA Security+ | Cybersecurity Analyst | Accessibility-Integrated Security | VanLUG Board**
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/violet-figueroa/)
 [![Portfolio](https://img.shields.io/badge/Portfolio-6B46C1?style=for-the-badge&logo=google-chrome&logoColor=white)](https://violetfigueroa.github.io)
@@ -10,21 +10,21 @@
 
 ## 🎯 About Me
 
-I'm a **CompTIA Security+ certified cybersecurity analyst** combining hands-on technical expertise with a passion for making security accessible and sustainable. I specialize in **incident response, digital forensics, and vulnerability management** with proven results across diverse environments.
+I'm a **CompTIA Security+ certified cybersecurity analyst** with hands-on lab training in incident response, digital forensics, and vulnerability assessment through Lighthouse Labs bootcamp. I bring practical IT and security experience from a small business role, plus a full-stack web development background.
 
 **What I Do:**
-- 🔍 **Incident Response & Digital Forensics** – Lead comprehensive DFIR investigations using industry-standard tools (Volatility, Autopsy, Splunk)
-- 🛡️ **Vulnerability Management** – Identify, prioritize, and remediate security risks using frameworks like NIST 800-53, ISO 27001, and OWASP
-- 🔐 **Application Security** – Secure code review, threat modeling, and OWASP Top 10 mitigation with full-stack experience (Node.js, React, PostgreSQL)
-- 📊 **SIEM & Threat Detection** – Design and tune detection rules, analyze logs, and track incident lifecycles using Splunk and QRadar
-- 👥 **Security Awareness** – Translate complex technical findings into actionable insights for executive leadership and non-technical stakeholders
+- 🔍 **Incident Response & Digital Forensics** – Trained in DFIR methodology through 30+ bootcamp labs (Volatility, Autopsy, Wireshark)
+- 🛡️ **Vulnerability Management** – Lab experience with OpenVAS scanning, CVE analysis, CVSS scoring, and remediation planning
+- 🔐 **Application Security** – Full-stack developer background (Node.js, React, PostgreSQL) with OWASP Top 10 awareness
+- 📊 **SIEM & Log Analysis** – Bootcamp training with Splunk and QRadar for alert triage, log correlation, and detection rules
+- 👥 **Security Awareness** – Taught basic security practices to a small business team; created accessible documentation
 
 **What Sets Me Apart:**
-- ✅ Implemented layered security controls that **stopped recurring malware and account-compromise incidents** across a 30-endpoint remote network over my 16-month tenure
-- ✅ Developed accessible security training that **measurably improved user security behavior** and reporting of suspicious activity
-- ✅ Led security assessments and remediation for **PCI DSS, GDPR, and PIPEDA compliance**, contributing to organizational certification
-- ✅ **Accessibility-integrated security** – Created inclusive incident response procedures (WCAG 2.1 compliant, screen reader compatible)
-- ✅ **Full-stack developer + security analyst** – Understand entire software development lifecycle for secure code review and AppSec work
+- ✅ **Practical security experience** – Deployed endpoint protection (Malwarebytes), password management (Bitwarden), and firewall rules for a small assistive-device business
+- ✅ Taught basic security hygiene to a non-technical team and created training materials
+- ✅ Reviewed **PIPEDA and GDPR** requirements and created privacy policies for an ecommerce business
+- ✅ **Accessibility-integrated security** – Experience making security controls work for users of assistive technologies
+- ✅ **Full-stack developer + security analyst** – Understand the software development lifecycle for secure code review and AppSec work
 - ✅ **Mission-driven values** – Passionate about open-source, digital privacy, right-to-repair, and sustainable technology
 
 ---
@@ -32,28 +32,27 @@ I'm a **CompTIA Security+ certified cybersecurity analyst** combining hands-on t
 ## 🛠️ Technical Skills
 
 ### 🔒 Security Tools & Frameworks
-**SIEM & Log Analysis:** Splunk, QRadar, Log Analysis  
-**Forensics & Memory Analysis:** Volatility, Autopsy, Wireshark, chain-of-custody procedures  
-**Vulnerability Assessment:** OpenVAS, Nessus (equivalent), CVSS scoring, remediation prioritization  
-**Web Application Security:** BurpSuite, OWASP ZAP, secure code review  
-**Network Security:** Nmap, Firewalls, IDS/IPS, VPN, routing & switching, Wi-Fi security  
-**Threat Intelligence:** MITRE ATT&CK mapping, threat hunting, indicator analysis  
-**Standards & Frameworks:** NIST 800-53, ISO 27001, CIS Controls, OWASP Top 10, PCI DSS, GDPR, PIPEDA, TLP classification  
+**SIEM & Log Analysis:** Splunk (lab), QRadar (lab), log correlation and alert triage  
+**Forensics & Memory Analysis:** Volatility (lab), Autopsy (lab), Wireshark (lab), chain-of-custody procedures  
+**Vulnerability Assessment:** OpenVAS (lab), CVSS scoring, remediation prioritization  
+**Web Application Security:** BurpSuite (lab), OWASP ZAP (lab), secure code review  
+**Network Security:** Nmap (lab), Windows Firewall, VPN, routing & switching, Wi-Fi security  
+**Threat Intelligence:** MITRE ATT&CK mapping, threat analysis  
+**Standards & Frameworks:** NIST 800-53, ISO 27001, CIS Controls, OWASP Top 10, PCI DSS (basic), GDPR, PIPEDA, TLP classification  
 
 ### 💻 Core Technical Competencies
 **Languages:** Python, Bash, JavaScript (ES6+), SQL, HTML5, CSS3  
 **Backend:** Node.js, Express, REST APIs, JSON processing  
 **Frontend:** React, responsive design, accessibility (WCAG 2.1)  
 **Databases:** PostgreSQL, parameterized queries (SQL Injection prevention)  
-**Systems:** Linux (Debian/Kali), Windows Server, macOS, Active Directory, Azure AD  
+**Systems:** Linux (Debian/Kali), Windows, macOS  
 **DevOps:** Docker, Git, CI/CD integration, GitHub Actions  
-**Cloud Security:** Azure networking, Azure AD identity management  
 
 ### 📈 Analysis & Business Skills
 **Incident Response Lifecycle:** Preparation → Detection → Analysis → Containment → Eradication → Recovery → Post-Incident  
-**Executive Communication:** Technical findings translated for C-suite, risk briefings, compliance reporting  
+**Communication:** Technical concepts translated for non-technical audiences; security training for small business team  
 **Documentation:** Incident reports, playbooks, policies, forensic reports, threat assessments  
-**Team Leadership:** Mentoring 50+ professionals, VanLUG board participation, security awareness training  
+**Community Leadership:** VanLUG board member, informal guidance to people exploring cybersecurity careers  
 **Accessibility Advocacy:** WCAG 2.1 compliance, neurodivergent-inclusive security practices  
 
 ---
@@ -64,7 +63,7 @@ I'm a **CompTIA Security+ certified cybersecurity analyst** combining hands-on t
 
 | Project | Focus | Highlight |
 |---------|-------|-----------|
-| **[Premium House Lights: The Heist](https://github.com/VioletFigueroa/Premium-House-Lights)** | Full-scope DFIR investigation | Ransomware attack response, 8-12 attack paths identified, executive briefing delivered |
+| **[Premium House Lights: The Heist](https://github.com/VioletFigueroa/Premium-House-Lights)** | Full-scope DFIR investigation | Simulated ransomware attack response, root cause analysis, actionable recommendations |
 | **[Intellectual Property Theft Investigation](https://github.com/VioletFigueroa/Digital-Forensics-Case-Study)** | Digital forensics case study | Memory analysis (Volatility), disk forensics (Autopsy), network traffic analysis, malware deployment timeline |
 | **[LifeLabs Data Breach Audit](https://github.com/VioletFigueroa/data-breach-investigation-forensics)** | Real-world breach analysis | Governance audit, PIPEDA compliance assessment, breach timeline reconstruction |
 | **[P7: IR Plan, Playbook & Policy](https://github.com/VioletFigueroa/security-policies-procedures-tlp)** | Incident response framework | Complete IR plan, playbooks for phishing/ransomware, escalation paths, TLP classification |
@@ -98,7 +97,7 @@ I'm a **CompTIA Security+ certified cybersecurity analyst** combining hands-on t
 
 | Project | Purpose | Impact |
 |---------|---------|--------|
-| **[Resume Automator](https://github.com/VioletFigueroa/resume-automator)** | ATS optimization + AI cover letters | Python/Jinja2, +80-120% callback rate, multi-phase resume customization |
+| **[Resume Automator](https://github.com/VioletFigueroa/resume-automator)** | ATS optimization + cover letter generation | Python/Jinja2, role-specific resume customization, PII protection |
 | **[Perplexport](https://github.com/VioletFigueroa/perplexport)** | AI conversation backup tool | TypeScript/Puppeteer, API automation, data sovereignty |
 | **[Knowledge Pipeline](https://github.com/VioletFigueroa/knowledge-pipeline)** | Self-hosted secure infrastructure | Docker, Nextcloud, local LLM integration, secure development environment |
 
@@ -112,29 +111,29 @@ Comprehensive cybersecurity certification covering threat management, vulnerabil
 
 ### Advanced Training
 - **Cyber Security Bootcamp Diploma** – Lighthouse Labs (Completed May 2025) | 30+ hands-on labs, strong performance across cohort
-- **Google Cybersecurity Specialization** – Coursera (Ongoing)
 - **Advent of Cyber 2025** – TryHackMe Challenge Series
 
 ---
 
 ## 💼 Professional Experience
 
-### Cybersecurity Analyst, Web Developer & IT Support
+### Web Developer & IT Support
 **Accessible Places** | Remote, Vancouver | Sept 2022 – Jan 2024
 
 **Key Achievements:**
-- 🎯 Implemented layered security controls (firewall rules, MFA, EDR) that **stopped recurring malware and account-compromise incidents** across 30-endpoint remote network over 16-month tenure
-- 🔍 Developed and delivered accessible security training that **measurably improved user security behavior** and increased reporting of suspicious activity
-- ✅ Led security assessments and remediation for **PCI DSS, GDPR, and PIPEDA compliance**, contributing to organizational certification
+- 🎯 Sole technical resource for a small assistive-device ecommerce business (~5 people), handling web development, IT support, security hardening, and social media management
+- 🔍 Migrated organization from plaintext password storage to **Bitwarden password manager**; deployed **Malwarebytes** anti-malware across business devices
+- ✅ Configured Windows Firewall rules, set up MFA on business accounts, and conducted 3 security reviews (website, business operations, social media) using self-directed learning
+- 📝 Reviewed **PIPEDA and GDPR** requirements and created privacy and cookie policies for the ecommerce storefront
 
 ---
 
 ## 🌟 What I Bring to Your Organization
 
-✅ **Incident Response Expertise** – Complete DFIR lifecycle from detection through post-incident analysis, with executive communication  
-✅ **Practical Security Depth** – 1.5+ years of hands-on cybersecurity work, 10+ years IT support, bootcamp-trained, CompTIA Security+ certified  
-✅ **Cross-Domain Skills** – Full-stack developer + security analyst = understanding of AppSec, OWASP, secure coding practices, software development lifecycle  
-✅ **Communication Strength** – Translate technical findings for C-suite, train non-technical users, create clear documentation  
+✅ **Incident Response Training** – 30+ hands-on bootcamp labs covering the complete DFIR lifecycle, from detection through post-incident analysis  
+✅ **Practical Security Experience** – 1.5 years of hands-on IT and security work at a small business, 10+ years freelance IT, CompTIA Security+ certified  
+✅ **Cross-Domain Skills** – Full-stack developer + security analyst = understanding of AppSec, OWASP, secure coding practices  
+✅ **Communication Strength** – Comfortable explaining technical concepts to non-technical audiences; created accessible documentation and training materials  
 ✅ **Accessibility Advocacy** – Create inclusive security solutions that work for neurodivergent practitioners and assistive technology users  
 
 ---
@@ -149,7 +148,7 @@ Comprehensive cybersecurity certification covering threat management, vulnerabil
 
 ---
 
-**Last Updated:** January 28, 2026  
-**Topics:** cybersecurity, incident-response, digital-forensics, application-security, owasp, vulnerability-assessment, iso-27001, nist, siem, security-operations, threat-hunting
+**Last Updated:** February 20, 2026  
+**Topics:** cybersecurity, incident-response, digital-forensics, application-security, owasp, vulnerability-assessment, iso-27001, nist, siem, accessibility, security-operations
 
 *Passionate about making cybersecurity more accessible, sustainable, and inclusive. Let's build secure systems together! 🚀*
